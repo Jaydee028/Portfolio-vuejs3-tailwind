@@ -40,6 +40,7 @@ const Menu =ref([
     {name:'Services',href:'#services'},
     {name:'About Me',href:'#about'},
     {name:'Skills',href:'#skills'},
+    {name:'Certificates',href:'#certificates'},
     {name:'Projects',href:'#projects'},
     {name:'Testimonials',href:'#testimonials'},
     {name:'Contact',href:'#contact'},
