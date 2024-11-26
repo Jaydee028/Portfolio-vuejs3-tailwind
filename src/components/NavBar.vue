@@ -1,6 +1,7 @@
 <template>
-    <header class="flex justify-between items-center p-6 bg-opacity-50 fixed top-0 left-0 w-full z-50 bg-[#111827]">
-        <div class="text-white text-3xl font-bold">#CodeJungler</div>
+    <header
+        class="flex justify-between items-center px-6 py-2 fixed top-0 left-0 w-full z-50 bg-[#111827] border-b-2 border-yellow-500">
+        <div class="text-white text-2xl md:text-3xl font-bold">#CodeJungler</div>
 
         <!-- Mobile Toggle Button -->
         <div class="md:hidden z-30">
@@ -23,7 +24,7 @@
             <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0">
                 <li v-for="item in Menu" :key="item.name">
                     <a :href="item.href"
-                        class="block text-white transition hover:text-primary ease-linear text-2xl md:text-lg"
+                        class="block text-white transition hover:text-primary ease-linear text-2xl md:text-base"
                         @click="scrollToSection(item.href)">
                         {{ item.name }}
                     </a>
@@ -39,6 +40,7 @@ const Menu = ref([
     { name: 'Services', href: '#services' },
     { name: 'About Me', href: '#about' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Certificates', href: '#certificates' },
     { name: 'Projects', href: '#projects' },
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '#contact' },
@@ -58,7 +60,7 @@ const scrollToSection = (href) => {
         // Use setTimeout to delay the scroll adjustment slightly
         setTimeout(() => {
             window.scrollTo({
-                top: sectionPosition - navbarHeight, // Adjust position with navbar height
+                top: sectionPosition - navbarHeight - 25, // Adjust position with navbar height
                 behavior: 'smooth',
             });
         }, 0); // A small delay to ensure the first scroll completes
