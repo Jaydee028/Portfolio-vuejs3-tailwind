@@ -1,5 +1,5 @@
 <template>
-    <section class="text-white mt-18" id="skills">
+    <section class="text-white mt-14" id="skills">
         <div class="absolute right-0 top-[110rem] h-full w-full justify-end">
             <span class="flex opacity-20">
                 <span class="w-16 h-32 rounded-l-full flex bg-primary blur-2xl"></span>
@@ -62,19 +62,12 @@
             <h2 class="text-4xl font-bold text-white text-left mb-8 mt-8 md:text-center md:mt-0">Tools</h2>
             <div class="bg-[#111a3e] py-10 sm:py-16">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-2">
-                    <div class="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                        <img
-                            v-for="(tool, index) in tools"
-                            :key="tool.id"
-                            :class="[
-                                    'col-span-2 max-h-12 w-full object-contain lg:col-span-1',
-                                    index === tools.length - 1 ? 'sm:col-start-2 col-start-2' : ''
-                                    ]"
-                            :src="tool.loc"
-                            :alt="tool.description"
-                            width="158"
-                            height="48"
-                        />
+                    <div
+                        class="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                        <img v-for="(tool, index) in tools" :key="tool.id" :class="[
+                            'col-span-2 max-h-12 w-full object-contain lg:col-span-1',
+                            index === tools.length - 1 ? 'sm:col-start-2 col-start-2' : ''
+                        ]" :src="tool.loc" :alt="tool.description" width="158" height="48" />
                     </div>
                 </div>
             </div>
@@ -115,10 +108,10 @@ const Experiences = ref([
 
 
 const tools = ref([
-    { id:1, loc: "https://tailwindui.com/plus/img/logos/158x48/transistor-logo-white.svg", description: "Transistor" },
-    { id:2, loc: "https://tailwindui.com/plus/img/logos/158x48/reform-logo-white.svg", description: "Reform" },
-    { id:3, loc: "https://tailwindui.com/plus/img/logos/158x48/tuple-logo-white.svg", description: "Tuple" },
-    { id:4, loc: "https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-white.svg", description: "SavvyCal" },
-    { id:5, loc: "https://tailwindui.com/plus/img/logos/158x48/statamic-logo-white.svg", description: "Statamic" },
+    { id: 1, loc: "https://tailwindui.com/plus/img/logos/158x48/transistor-logo-white.svg", description: "Transistor" },
+    { id: 2, loc: "https://tailwindui.com/plus/img/logos/158x48/reform-logo-white.svg", description: "Reform" },
+    { id: 3, loc: "https://tailwindui.com/plus/img/logos/158x48/tuple-logo-white.svg", description: "Tuple" },
+    { id: 4, loc: "https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-white.svg", description: "SavvyCal" },
+    { id: 5, loc: "https://tailwindui.com/plus/img/logos/158x48/statamic-logo-white.svg", description: "Statamic" },
 ]);
 </script>
