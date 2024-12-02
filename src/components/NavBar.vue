@@ -1,8 +1,8 @@
 <template>
     <header
         class="flex justify-between items-center px-6 py-2 fixed top-0 left-0 w-full z-50 bg-[#111827] border-b-2 border-yellow-500">
-        <div class="text-white text-2xl md:text-3xl font-bold">#CodeJungler</div>
-
+        <!-- <div class="text-white text-2xl md:text-3xl font-bold">#CodeJungler</div> -->
+        <img class="h-10 w-[11em]" src="../assets/Logo3.png" alt="menu">
         <!-- Mobile Toggle Button -->
         <div class="md:hidden z-30">
             <button type="button" class="block focus:outline-none" @click="isMenuOpen = !isMenuOpen">
@@ -18,7 +18,7 @@
 
         <!-- Navbar Link -->
         <nav :class="[
-            'fixed inset-0 z-40 flex flex-col items-center justify-center bg-[#111827] md:relative md:bg-transparent md:flex md:justify-between md:flex-row',
+            'fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#111827] md:relative md:bg-transparent md:flex md:justify-between md:flex-row',
             isMenuOpen ? 'block' : 'hidden'
         ]">
             <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0">

@@ -22,10 +22,10 @@
                         With over five years of experience in data analysis and web development, I specialize in
                         transforming complex data into easy-to-understand insights. As a key contributor to the
                         <strong>development</strong> and <strong>maintenance</strong> of the <span
-                            class="text-blue-400 font-semibold">Agricultural and Geographical Information Systems web
-                            apps</span>
-                        in the
-                        <span class="text-green-500">banana industry</span>, I’ve leveraged my skills in various
+                            class="text-blue-400 font-semibold">Agricultural and Geographical Information Systems</span>
+                        for the <strong>world-class quality
+                            <span class="text-green-500">banana industry</span></strong>, I’ve leveraged my skills in
+                        various
                         technologies to create solutions that drive impactful results. These tools, which feature
                         <em>interactive maps and charts</em> for <strong>data visualization</strong>, have enhanced
                         <strong>decision-making</strong> and delivered exceptional outcomes, such as improved banana
