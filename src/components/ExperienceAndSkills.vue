@@ -1,6 +1,6 @@
 <template>
-    <section class="text-white mt-14" id="skills">
-        <div class="absolute right-0 top-[110rem] h-full w-full justify-end">
+    <section class="text-white mt-6" id="skills">
+        <div class="absolute right-0 top-[163rem] h-full w-full justify-end">
             <span class="flex opacity-20">
                 <span class="w-16 h-32 rounded-l-full flex bg-primary blur-2xl"></span>
                 <span class="w-16 h-32 rounded-r-full flex bg-[#f88fc2] blur-2xl mt-14"></span>
@@ -18,22 +18,22 @@
                     </h2>
                 </div>
 
-                <div v-for="skill in Skills" :key="skill.id" class="mt-2 flex flex-col items-start space-y-2">
+                <div v-for="skill in Skills" :key="skill.id" class="mt-1 flex flex-col items-start "> <!--space-y-1 -->
                     <!-- Skill Name -->
-                    <h4 class="font-bold uppercase text-white">
+                    <h4 class="text-xl font-bold uppercase text-white">
                         {{ skill.name }}
                     </h4>
                     <!-- Stars for rating -->
                     <div class="flex items-center">
-                        <span v-for="n in 5" :key="n" class="text-2xl mr-1"
+                        <span v-for="n in 5" :key="n" class="text-xl mr-1"
                             :class="n <= skill.rating ? 'text-yellow-500' : 'text-gray-500'">
                             ★
+                        </span> <span class="pl-1 text-sm text-primary">
+                            ({{ ratingLabel(skill.rating) }})
                         </span>
                     </div>
                     <!-- Display rating label -->
-                    <span class="text-lg font-semibold text-primary">
-                        {{ ratingLabel(skill.rating) }}
-                    </span>
+
                 </div>
             </div>
 
@@ -84,29 +84,24 @@ import { ref } from "vue";
 
 // Map skill ratings to labels
 const ratingLabel = (rating) => {
-    const labels = ["Novice", "Beginner", "Intermediate", "Advanced", "Proficient"];
+    const labels = ["Beginner", "Novice", "Intermediate", "Proficient", "Expert"];
     return labels[rating - 1];
 };
 
 const Skills = ref([
-    { id: 1, name: "HTML & CSS", rating: 4 },
-    { id: 2, name: "Python", rating: 3 },
-    { id: 3, name: "JavaScript", rating: 5 },
-    { id: 4, name: "Figma", rating: 4 },
+    { id: 1, name: "Data Analysis", rating: 5 },
+    { id: 2, name: "SQL Management", rating: 4 },
+    { id: 3, name: "Back-End Development", rating: 4 },
+    { id: 4, name: "Front-End", rating: 2 },
+    { id: 5, name: "Advance Excel & VBA", rating: 5 },
 ]);
 
 const Experiences = ref([
     {
         id: 1,
-        role: "Software Engineer",
-        company: "Microsoft",
-        date: "Mar 2023 - September 2024",
-    },
-    {
-        id: 2,
-        role: "Frontend Developer",
-        company: "Spotify",
-        date: "Mar 2022 - September 2023",
+        role: "Data Analyst & Web Developer",
+        company: "Tagum Agricultural Development Co., Inc.",
+        date: `September 2019 - ${new Date().toLocaleString('default', { month: 'long' })} ${new Date().getFullYear()}`,
     },
 ]);
 
