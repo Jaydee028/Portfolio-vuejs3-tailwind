@@ -7,19 +7,20 @@
         </div>
 
         <!-- Content -->
-        <div class="w-full px-5 sm:px-8 md:px-12 lg:px-16 max-w-screen-lg lg:max-w-screen-xl mx-auto relative">
-            <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
+        <div class="w-full px-5 sm:px-8 md:px-12 lg:px-10 max-w-screen-lg lg:max-w-screen-xl mx-auto relative">
+            <div class="grid lg:grid-cols-2 gap-6 xl:gap-[1em] relative pt-24 lg:max-w-none md:max-w-3xl mx-auto">
                 <!-- Text Section -->
                 <div class="lg:py-6">
                     <div class="text-center lg:text-left">
                         <h1 class="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
                             Hi, I'm <span
                                 class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-pink-500">Jesse
-                                Dan</span>
+                                Dan</span>!
                         </h1>
                     </div>
-                    <p class="text-gray-300 pt-8 text-justify lg:text-justify mx-auto max-w-xl">
-                        With over five years of experience in data analysis and web development, I specialize in
+                    <p class="text-gray-300 pt-8 text-justify lg:text-justify mx-auto max-w-xl indent-8">
+                        With over five years of experience in <strong> Data Analysis</strong> and <b>Web Development</b>, I
+                        specialize in
                         transforming complex data into easy-to-understand insights. As a key contributor to the
                         <strong>development</strong> and <strong>maintenance</strong> of the <span
                             class="text-blue-400 font-semibold">Agricultural and Geographical Information Systems</span>

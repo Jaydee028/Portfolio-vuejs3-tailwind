@@ -13,7 +13,7 @@
           <Certificates />
           <LatestProjSection />
           <ContactSection />
-          <TestimonialsSection />
+          <!-- <TestimonialsSection /> -->
           <Footer />
           <BackToTop />
         </div>
