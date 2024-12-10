@@ -45,27 +45,39 @@
                     maintaining it myself. This hobby not only fuels my love for the open road but also mirrors my passion
                     for hands-on problem-solving and understanding how systems work—whether in technology or on two wheels.
                 </p>
-                <!-- <div class="grid grid-cols-3 gap-4 max-w-lg pt-8">
-                    <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+200</h3>
-                        <p class="text-sm sm:text-base text-gray-300">Happy Client</p>
-                    </div>
-                    <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+10</h3>
-                        <p class="text-sm sm:text-base text-gray-300">Project</p>
+                <div class="flex flex-wrap justify-center gap-4 max-w-lg pt-8 mx-auto">
+                    <!-- Age Section -->
+                    <div
+                        class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3 flex-1 min-w-[150px]">
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">{{ age }}</h3>
+                        <p class="text-sm sm:text-base text-gray-300">Years Old</p>
                     </div>
 
-                    <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+5</h3>
-                        <p class="text-sm sm:text-base text-gray-300"> Years Experience</p>
+                    <!-- Country Section -->
+                    <div
+                        class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3 flex-1 min-w-[150px]">
+                        <div class="flex items-center justify-center space-x-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg"
+                                alt="Philippines Flag" class="w-8 h-6 sm:w-10 sm:h-8" />
+                            <h3 class="text-white font-bold text-lg sm:text-xl lg:text-2xl">PH</h3>
+                        </div>
+                        <p class="text-sm sm:text-base text-gray-300">Country</p>
                     </div>
-                </div> -->
+
+                    <!-- Experience Section -->
+                    <div
+                        class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3 flex-1 min-w-[150px]">
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+{{ yearsExperience }}</h3>
+                        <p class="text-sm sm:text-base text-gray-300">Years Experience</p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
 </template>
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 const education = ref([
     {
         id: 1,
@@ -78,8 +90,31 @@ const education = ref([
         id: 2,
         program: 'B.S. in Information Technology',
         School: 'University of Southeastern Philippines',
-        year: 'School Year: 2022-2024',
+        year: 'School Year: 2016-2019',
         gwa: 'GWA: 1.94'
     }
 ])
+
+// Utility Function to Calculate Years
+function calculateYears(startDate) {
+    const today = new Date();
+    const start = new Date(startDate);
+    const currentYear = today.getFullYear();
+    const startYear = start.getFullYear();
+
+    let years = currentYear - startYear;
+
+    const hasAnniversaryPassed =
+        today.getMonth() > start.getMonth() ||
+        (today.getMonth() === start.getMonth() && today.getDate() >= start.getDate());
+    if (!hasAnniversaryPassed) {
+        years--;
+    }
+
+    return years;
+}
+
+// Dynamic Values Using Functions
+const age = computed(() => calculateYears('1999-02-28'));
+const yearsExperience = computed(() => calculateYears('2019-09-11'));
 </script>

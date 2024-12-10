@@ -107,11 +107,10 @@ const Experiences = ref([
 
 
 const tools = ref([
-    { id: 1, loc: "https://tailwindui.com/plus/img/logos/158x48/transistor-logo-white.svg", description: "Transistor" },
+    // { id: 1, loc: require('@/assets/sql-server-logo-white.png'), description: 'SQL Server' },
     { id: 2, loc: "https://tailwindui.com/plus/img/logos/158x48/reform-logo-white.svg", description: "Reform" },
     { id: 3, loc: "https://tailwindui.com/plus/img/logos/158x48/tuple-logo-white.svg", description: "Tuple" },
     { id: 4, loc: "https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-white.svg", description: "SavvyCal" },
     { id: 5, loc: "https://tailwindui.com/plus/img/logos/158x48/statamic-logo-white.svg", description: "Statamic" },
-    // { id: 6, loc: "https://tailwindui.com/plus/img/logos/158x48/statamic-logo-white.svg", description: "Statamic" },
 ]);
 </script>
