@@ -91,8 +91,8 @@ const ratingLabel = (rating) => {
 const Skills = ref([
     { id: 1, name: "Data Analysis", rating: 5 },
     { id: 2, name: "SQL Management", rating: 4 },
-    { id: 3, name: "Back-End Development", rating: 4 },
-    { id: 4, name: "Front-End", rating: 2 },
+    { id: 3, name: "Front-End Dev", rating: 2 },
+    { id: 4, name: "Back-End Dev", rating: 4 },
     { id: 5, name: "Advance Excel & VBA", rating: 5 },
 ]);
 

@@ -53,19 +53,34 @@
         </div>
 
         <!-- Modal -->
+
         <div v-if="modalProject" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
-            <div class="bg-white p-6 rounded-lg relative max-w-full sm:max-w-3xl md:max-w-4xl w-full z-50">
-                <button @click="closeModal"
-                    class="absolute top-2 right-2 text-3xl text-gray-600 sm:text-4xl md:text-5xl">X</button>
-                <div class="flex flex-col sm:flex-row">
-                    <div class="flex-shrink-0 w-full sm:w-72 h-72 sm:h-72 md:h-96 bg-cover rounded-xl"
-                        :style="{ backgroundImage: 'url(' + modalProject.image + ')', backgroundSize: 'cover' }">
+            <div class="bg-white p-6 rounded-lg relative max-w-[90vw] max-h-[80vh] w-full z-50 overflow-hidden">
+
+                <!-- Title Bar -->
+                <div class="flex justify-between items-center border-b border-gray-300 pb-2 mb-4">
+                    <h3 class="text-2xl font-semibold text-black">{{ modalProject.title }}</h3>
+                    <button @click="closeModal" class="text-3xl text-gray-600 sm:text-4xl md:text-5xl">x</button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="flex flex-col sm:flex-row h-full">
+
+                    <!-- Image Section -->
+                    <div class="flex-shrink-0 w-full sm:w-1/3 sm:h-auto h-[25vh] bg-cover rounded-xl"
+                        :style="{ backgroundImage: 'url(' + modalProject.image + ')', backgroundSize: 'cover', backgroundPosition: 'center' }">
                     </div>
-                    <div class="mt-4 sm:mt-0 sm:ml-6 text-black">
-                        <h3 class="text-2xl sm:text-xl font-semibold">{{ modalProject.title }}</h3>
-                        <p class="mt-4 text-sm text-justify indent-8 sm:text-base md:text-lg">{{ modalProject.description }}
-                        </p>
-                        <div class="flex flex-wrap mt-4">
+
+                    <!-- Description Section -->
+                    <div class="mt-3 sm:mt-0 sm:ml-6 text-black flex-1 h-full">
+                        <!-- Scrollable Description -->
+                        <div class="overflow-y-auto sm:max-h-[70vh] max-h-[30vh]">
+                            <p class="mt-2 text-sm text-justify indent-8 sm:text-base md:text-lg">{{
+                                modalProject.description }}</p>
+                        </div>
+
+                        <!-- Footer - Technologies -->
+                        <div class="flex flex-wrap mt-2 pt-1 border-t">
                             <div v-for="technology in modalProject.technologies" :key="technology"
                                 class="text-center ml-1 mt-1 rounded-3xl bg-white text-black"
                                 style="box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); border: 1px solid #111827; backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px);">
@@ -76,6 +91,11 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
     </section>
 </template>
 
@@ -95,7 +115,7 @@ const Projects = ref([
     },
     {
         id: 2,
-        category: ['Mobile App'],
+        category: ['Web Development'],
         image: 'src/assets/mobile.jpg',
         title: 'Agricultural Information System',
         description: 'The Agriculture Information System (AIS) is a user-friendly web application developed in collaboration with my colleagues at TADECO to support banana plantations in achieving optimal productivity. AIS simplifies the management of key aspects of banana production, from planting to box preparation, by providing clear and detailed monitoring and reporting tools. It integrates data on banana health, weather conditions, and other critical parameters, presenting them through intuitive graphical and tabular visualizations that cover the entire 6,200-hectare area of TADECO’s plantation. These features empower TADECO’s decision-makers to make informed, data-driven decisions to effectively address challenges like fusarium wilt, sigatoka, field loss causes, and fruit waste—issues that have significantly impacted yields and caused the closure of many plantations across the Philippines. By addressing these challenges head-on, AIS has enabled TADECO to streamline reporting, reduce losses, and sustain its position as a leading global exporter in the banana industry, demonstrating its vital role in overcoming production obstacles and ensuring long-term success.',

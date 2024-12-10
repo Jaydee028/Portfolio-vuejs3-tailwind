@@ -31,19 +31,40 @@
                     Me
                 </h2>
                 <p class="text-base text-justify lg:text-lg mt-8 indent-8">
-                    I am a dedicated professional with a strong passion for transforming complex data into meaningful
+                    <!-- I am a dedicated professional with a strong passion for transforming complex data into meaningful
                     insights that drive effective decision-making. My analytical thinking allows me to break down detailed
-                    problems into manageable solutions, ensuring clarity and efficiency in every project I undertake.
+                    problems into manageable solutions, ensuring clarity and efficiency in every project I undertake. I am
+                    deeply committed to continuous learning, staying updated on the latest innovations in technology, and
+                    embracing opportunities to grow both personally and professionally. -->
+                    I am a dedicated professional with a passion for transforming complex data into decision-driven
+                    insights. My analytical skills enable me to develop efficient solutions to challenging problems,
+                    ensuring clarity and impactful results. I am committed to continuous learning, staying updated on the
+                    latest technological advancements, and embracing growth opportunities to enhance my expertise.
                 </p>
-                <p class="text-base text-justify lg:text-lg indent-8">
-                    Beyond my work in data analysis and programming, I am deeply committed to continuous learning, staying
-                    updated on the latest innovations in technology, and embracing opportunities to grow both personally and
-                    professionally.
+                <p class="text-base text-justify lg:text-lg indent-8 mt-1">
+                    <!-- Beyond my expertise in data analysis and programming, I have a genuine enthusiasm for tackling
+                    challenges, whether from clients, friends, or family members who share issues they are facing—even
+                    outside formal engagements. I see each problem as an opportunity to learn, grow, and enhance my
+                    problem-solving abilities. These experiences not only sharpen my skills but also prepare me to address
+                    similar challenges effectively in the future. I am always open to discussions and enjoy finding
+                    collaborative solutions. -->
+                    Beyond my expertise in data analysis and programming, I thrive on tackling challenges, whether from
+                    clients, friends, or family. Every problem is an opportunity to learn, grow, and refine my skills,
+                    preparing me to handle similar tasks in the future. I
+                    value collaboration and am always open to discussions, ensuring solutions are tailored to your specific
+                    needs.
                 </p>
-                <p class="text-base text-justify lg:text-lg indent-8">
-                    In my free time, I enjoy riding my motorcycle and have developed a keen interest in repairing and
-                    maintaining it myself. This hobby not only fuels my love for the open road but also mirrors my passion
+                <p class="text-base text-justify lg:text-lg indent-8 mt-1">
+                    <!-- In my free time, I enjoy riding my motorcycle, particularly on mountain roads and coastal routes where I
+                    can immerse myself in the beauty of nature. I have also developed a keen interest in repairing and
+                    maintaining my motorcycle, which not only fuels my love for the open road but also reflects my passion
                     for hands-on problem-solving and understanding how systems work—whether in technology or on two wheels.
+                    My family serves as a source of inspiration and support, grounding me and motivating me to strive for
+                    excellence in all aspects of my life. -->
+                    In my free time, I enjoy motorcycle rides through scenic mountain and coastal roads, immersing myself in
+                    nature’s beauty. My interest in repairing and maintaining my bike reflects my passion for hands-on
+                    problem-solving and understanding systems at their core. These traits, coupled with my family’s support,
+                    inspire me to excel in every aspect of my life.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 max-w-lg pt-8 mx-auto">
                     <!-- Age Section -->

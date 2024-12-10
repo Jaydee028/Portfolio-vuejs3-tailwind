@@ -8,7 +8,7 @@
 
         <!-- Content -->
         <div class="w-full px-5 sm:px-8 md:px-12 lg:px-10 max-w-screen-lg lg:max-w-screen-xl mx-auto relative">
-            <div class="grid lg:grid-cols-2 gap-6 xl:gap-[1em] relative pt-24 lg:max-w-none md:max-w-3xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-6 xl:gap-[2em] relative pt-24 lg:max-w-none md:max-w-xl mx-auto">
                 <!-- Text Section -->
                 <div class="lg:py-6">
                     <div class="text-center lg:text-left">
