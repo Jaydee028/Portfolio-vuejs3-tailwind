@@ -13,8 +13,10 @@
             <ul class="px-4 sm:py-16 xl:pr-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
                 data-aos="fade-right">
                 <div v-for="project in filteredProjects" :key="project.id">
-                    <div class="h-52 md:h-[24rem] rounded-t-xl relative group"
-                        :style="{ backgroundImage: 'url(' + project.image + ')', backgroundSize: 'cover' }">
+                    <div class="h-52 md:h-[24rem] rounded-t-xl relative group" :style="{
+                        backgroundImage: 'url(' + project.image + ')', backgroundSize: 'cover', backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                    }">
                         <div class="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0
             hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500
         ">
@@ -67,16 +69,20 @@
                 <div class="flex flex-col sm:flex-row h-full">
 
                     <!-- Image Section -->
-                    <div class="flex-shrink-0 w-full sm:w-1/3 sm:h-auto h-[25vh] bg-cover rounded-xl"
-                        :style="{ backgroundImage: 'url(' + modalProject.image + ')', backgroundSize: 'cover', backgroundPosition: 'center' }">
+                    <div class="flex-shrink-0 w-full sm:w-1/3 sm:h-auto h-[25vh] bg-cover rounded-xl" :style="{
+                        backgroundImage: 'url(' + modalProject.image + ')',
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                    }">
                     </div>
 
                     <!-- Description Section -->
                     <div class="mt-3 sm:mt-0 sm:ml-6 text-black flex-1 h-full">
                         <!-- Scrollable Description -->
                         <div class="overflow-y-auto sm:max-h-[70vh] max-h-[30vh]">
-                            <p class="mt-2 text-sm text-justify indent-8 sm:text-base md:text-lg">{{
-                                modalProject.description }}</p>
+                            <p class="mt-2 text-sm text-justify sm:text-base md:text-lg" v-html="modalProject.description">
+                            </p>
                         </div>
 
                         <!-- Footer - Technologies -->
@@ -89,6 +95,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -106,9 +113,9 @@ const Projects = ref([
     {
         id: 1,
         category: ['Web Development', 'Mobile App'],
-        image: 'src/assets/project.png',
+        image: 'src/assets/PestMon.png',
         title: 'PestMon Mobile and Web Application',
-        description: 'Pests and diseases (P&D) pose a significant threat to banana farming, leading to major losses in both yield and quality globally. Traditional methods, such as paper-based case recording, often result in missed treatments, duplicated efforts, and delayed responses, making it difficult to manage outbreaks effectively. To solve these issues, I developed an innovative system at TADECO that includes a mobile app for real-time P&D case recording and treatment tracking, along with a web app for QR code management, lab test requests, and graphical reports with geotagging and a spatial map to visualize the severity of P&D cases across farms, from no cases to high severity. The system also features advanced forecasting powered by a Long Short-Term Memory (LSTM) model, which accurately predicts potential outbreaks. This solution streamlines reporting, reduces errors, and ensures timely treatments, helping TADECO’s farmers protect their crops and boost productivity.',
+        description: 'Pests and diseases (P&D) pose a significant threat to banana farming, leading to major losses in both yield and quality globally.<br><br> Traditional methods, such as paper-based case recording, often result in missed treatments, duplicated efforts, and delayed responses, making it difficult to manage outbreaks effectively.<br><br> To solve these issues, I developed an innovative system at TADECO that includes a mobile app for real-time P&D case recording and treatment tracking, along with a web app for QR code management, lab test requests, and graphical reports with geotagging and a spatial map to visualize the severity of P&D cases across farms, from no cases to high severity.<br><br> The system also features advanced forecasting powered by a Long Short-Term Memory (LSTM) model, which accurately predicts potential outbreaks. This solution streamlines reporting, reduces errors, and ensures timely treatments, helping TADECO’s farmers protect their crops and boost productivity.',
         technologies: ['vue.js 3', 'vuex', 'Express'],
         gitURL: '',
         webURL: ''
@@ -118,7 +125,7 @@ const Projects = ref([
         category: ['Web Development'],
         image: 'src/assets/mobile.jpg',
         title: 'Agricultural Information System',
-        description: 'The Agriculture Information System (AIS) is a user-friendly web application developed in collaboration with my colleagues at TADECO to support banana plantations in achieving optimal productivity. AIS simplifies the management of key aspects of banana production, from planting to box preparation, by providing clear and detailed monitoring and reporting tools. It integrates data on banana health, weather conditions, and other critical parameters, presenting them through intuitive graphical and tabular visualizations that cover the entire 6,200-hectare area of TADECO’s plantation. These features empower TADECO’s decision-makers to make informed, data-driven decisions to effectively address challenges like fusarium wilt, sigatoka, field loss causes, and fruit waste—issues that have significantly impacted yields and caused the closure of many plantations across the Philippines. By addressing these challenges head-on, AIS has enabled TADECO to streamline reporting, reduce losses, and sustain its position as a leading global exporter in the banana industry, demonstrating its vital role in overcoming production obstacles and ensuring long-term success.',
+        description: 'The Agriculture Information System (AIS) is a user-friendly web application developed in collaboration with my colleagues at TADECO to support banana plantations in achieving optimal productivity.<br><br> AIS simplifies the management of key aspects of banana production, from planting to box preparation, by providing clear and detailed monitoring and reporting tools.<br><br> It integrates data on banana health, weather conditions, and other critical parameters, presenting them through intuitive graphical and tabular visualizations that cover the entire 6,200-hectare area of TADECO’s plantation.<br><br> These features empower TADECO’s decision-makers to make informed, data-driven decisions to effectively address challenges like fusarium wilt, sigatoka, field loss causes, and fruit waste—issues that have significantly impacted yields and caused the closure of many plantations across the Philippines.<br><br> By addressing these challenges head-on, AIS has enabled TADECO to streamline reporting, reduce losses, and sustain its position as a leading global exporter in the banana industry, demonstrating its vital role in overcoming production obstacles and ensuring long-term success.',
         technologies: ['vue.js 3', 'vuex', 'Express'],
         gitURL: '',
         webURL: ''
@@ -128,12 +135,13 @@ const Projects = ref([
         category: ['Web Development'],
         image: 'src/assets/project.png',
         title: 'GeoGraphical Information System',
-        description: 'The Geographical Information System (GIS) is an advanced web application developed in collaboration with my colleagues at TADECO to improve the management of banana plantations through precise geospatial data analysis. GIS provides a detailed map of TADECO’s plantation and its extensions, showing the spatial layout of the lots that make up the entire area. The system displays real-time data on the status of these lots based on selected parameters, helping decision-makers monitor plantation conditions, track interventions, and allocate resources effectively. By addressing critical challenges like Fusarium wilt, Sigatoka, and fruit waste, GIS has played a key role in enhancing operational efficiency, minimizing losses, and supporting TADECO"s leadership in the global banana industry. This tool is essential for overcoming geographical and operational challenges, ensuring sustainable plantation management, and driving long-term success.',
+        description: 'The Geographical Information System (GIS) is an advanced web application developed in collaboration with my colleagues at TADECO to improve the management of banana plantations through precise geospatial data analysis.<br><br> GIS provides a detailed map of TADECO’s plantation and its extensions, showing the spatial layout of the lots that make up the entire area.<br><br> The system displays real-time data on the status of these lots based on selected parameters, helping decision-makers monitor plantation conditions, track interventions, and allocate resources effectively.<br><br> By addressing critical challenges like Fusarium wilt, Sigatoka, and fruit waste, GIS has played a key role in enhancing operational efficiency, minimizing losses, and supporting TADECO"s leadership in the global banana industry.<br><br> This tool is essential for overcoming geographical and operational challenges, ensuring sustainable plantation management, and driving long-term success.',
         technologies: ['vue.js 3', 'vuex', 'Express'],
         gitURL: '',
         webURL: ''
     }
 ]);
+
 
 const selectedCategory = ref('all');
 const modalProject = ref(null);

@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="px-4 xl:px-16" data-aos="fade-up">
-            <h2 class="text-4xl font-bold text-white text-left mb-8 mt-8 md:text-center md:mt-0">Tools</h2>
+            <h2 class="text-4xl font-bold text-white text-left mb-8 mt-8 md:text-center md:mt-0">Budges</h2>
             <div class="bg-[#111a3e] py-10 sm:py-16">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-2">
                     <div
