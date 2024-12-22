@@ -18,21 +18,22 @@
                                 Dan</span>!
                         </h1>
                     </div>
-                    <p class="text-gray-300 pt-8 text-justify lg:text-justify mx-auto max-w-xl indent-8">
+                    <p class="text-gray-200 pt-8 text-justify lg:text-justify mx-auto max-w-xl lg:text-lg indent-8">
                         With over five years of experience in <strong>Data Analysis</strong> and <strong>Web
                             Development</strong>, I specialize in transforming complex data into easy-to-understand
-                        insights.<br><br>
-
+                        insights.</p>
+                    <p class="text-gray-200 text-justify lg:text-justify mx-auto max-w-xl lg:text-lg indent-8 mt-1">
                         As a key contributor to the <strong>development</strong> and <strong>maintenance</strong> of the
                         <span class="text-blue-400 font-semibold">Agricultural and Geographical Information Systems</span>
                         for the <strong>world-class quality <span class="text-green-500">banana industry</span></strong>,
                         I’ve leveraged my skills in various technologies to create solutions that drive impactful
-                        results.<br><br>
-
+                        results.
+                    </p>
+                    <p class="text-gray-200 text-justify lg:text-justify mx-auto max-w-xl lg:text-lg indent-8 mt-1">
                         These tools, which feature <em>interactive maps and charts</em> for <strong>data
                             visualization</strong>, have enhanced <strong>decision-making</strong> and delivered exceptional
-                        outcomes, such as improved banana harvests for global export.<br><br>
-
+                        outcomes, such as improved banana harvests for global export.</p>
+                    <p class="text-gray-200 text-justify lg:text-justify mx-auto max-w-xl lg:text-lg indent-8 mt-1">
                         If you’re looking for someone who combines <strong>technical expertise</strong> with a
                         passion for
                         <span class="italic text-yellow-500">innovation</span>, let’s connect and explore how I can take
