@@ -59,22 +59,18 @@
             </div>
         </div>
         <div class="px-4 xl:px-16" data-aos="fade-up">
-            <h2 class="text-4xl font-bold text-white text-left mb-8 mt-8 md:text-center md:mt-0">Budges</h2>
-            <div class="bg-[#111a3e] py-10 sm:py-16">
+            <h2 class="text-4xl font-bold text-white text-left mb-8 mt-8 md:text-center md:mt-0">Badges</h2>
+
+            <div class="bg-[#111a3e] py-8 sm:py-6">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-2">
                     <div
-                        class="mx-auto mt-2 grid max-w-lg grid-cols-4  gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 items-center">
-                        <img v-for="tool in tools" :key="tool.id" :class="[
-                            'col-span-2 max-h-12 w-full object-contain lg:col-span-1',
-                        ]" :src="tool.loc" :alt="tool.description" width="158" height="48" />
-                        <!-- class="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                        <img v-for="(tool, index) in tools" :key="tool.id" :class="[
-                            'col-span-2 max-h-12 w-full object-contain lg:col-span-1',
-                            index === tools.length - 1 ? 'sm:col-start-2 col-start-2' : ''
-                        ]" :src="tool.loc" :alt="tool.description" width="158" height="48" /> -->
+                        class="grid mx-auto gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 items-center justify-center">
+                        <img v-for="tool in tools" :key="tool.id" :src="tool.loc" alt="Tool"
+                            class="max-w-full h-auto object-contain mx-auto" width="158" height="48" />
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 </template>
@@ -108,9 +104,9 @@ const Experiences = ref([
 
 const tools = ref([
     // { id: 1, loc: require('@/assets/sql-server-logo-white.png'), description: 'SQL Server' },
-    { id: 2, loc: "https://tailwindui.com/plus/img/logos/158x48/reform-logo-white.svg", description: "Reform" },
-    { id: 3, loc: "https://tailwindui.com/plus/img/logos/158x48/tuple-logo-white.svg", description: "Tuple" },
-    { id: 4, loc: "https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-white.svg", description: "SavvyCal" },
-    { id: 5, loc: "https://tailwindui.com/plus/img/logos/158x48/statamic-logo-white.svg", description: "Statamic" },
+    { id: 1, loc: "src/assets/badge1.png", description: "Reform" },
+    { id: 2, loc: "src/assets/badge2.png", description: "Reform" },
+    { id: 3, loc: "src/assets/badge3.png", description: "Reform" },
+
 ]);
 </script>
