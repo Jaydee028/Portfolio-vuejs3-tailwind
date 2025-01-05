@@ -58,7 +58,8 @@
                                         d="M1 17V18C1 18.7956 1.31607 19.5587 1.87868 20.1213C2.44129 20.6839 3.20435 21 4 21H14C14.7956 21 15.5587 20.6839 16.1213 20.1213C16.6839 19.5587 17 18.7956 17 18V17"
                                         stroke="#f59e0b" stroke-width="2" stroke-linecap="round" />
                                 </svg>
-                                <a href="/resume.pdf" download="resume.pdf" class="pl-2 text-primary">Download Resume</a>
+                                <a href="/Bancale Resume.pdf" download="Bancale Resume.pdf"
+                                    class="pl-2 text-primary">Download Resume</a>
                             </div>
                         </button>
                     </div>
