@@ -64,9 +64,11 @@
             <div class="bg-[#111a3e] py-8 sm:py-6">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-2">
                     <div
-                        class="grid mx-auto gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 items-center justify-center">
-                        <img v-for="tool in tools" :key="tool.id" :src="tool.loc" alt="Tool"
-                            class="max-w-full h-auto object-contain mx-auto" width="158" height="48" />
+                        class="grid mx-auto gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 items-center justify-center">
+                        <a v-for="tool in tools" :key="tool.id" :href="tool.link" target="_blank" rel="noopener noreferrer">
+                            <img :src="tool.loc" alt="Tool" class="max-w-full h-auto object-contain mx-auto" width="158"
+                                height="48" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -104,9 +106,11 @@ const Experiences = ref([
 
 const tools = ref([
     // { id: 1, loc: require('@/assets/sql-server-logo-white.png'), description: 'SQL Server' },
-    { id: 1, loc: "src/assets/badge1.png", description: "Reform" },
-    { id: 2, loc: "src/assets/badge2.png", description: "Reform" },
-    { id: 3, loc: "src/assets/badge3.png", description: "Reform" },
+    { id: 1, loc: "src/assets/badge1.png", link: "https://www.credly.com/badges/4a5442fe-8f16-4d9c-a0a3-a1378f1dff94/public_url" },
+    { id: 4, loc: "src/assets/badge4.png", link: "https://www.credly.com/badges/94ffe539-2bda-43e1-bb03-4fd1958ad95a/public_url" },
+    { id: 2, loc: "src/assets/badge2.png", link: "https://www.credly.com/badges/309d8f0b-7d22-4d5a-ba06-5aecda58ae14/public_url" },
+    { id: 3, loc: "src/assets/badge3.png", link: "https://www.credly.com/badges/442390f9-bdc8-4f15-974e-24992cfb007a/public_url" },
+
 
 ]);
 </script>

@@ -95,6 +95,14 @@ const Certificates = ref([
     },
     {
         id: 6,
+        certificate: 'Analytics',
+        image: 'src/assets/certificates/Cert13.jpg',
+        title: 'Managing Big Data with MySQL',
+        description: 'Duke University',
+        webURL: 'https://coursera.org/share/cfd1045b2642093b8ff40b76e4c3b8c1'
+    },
+    {
+        id: 7,
         certificate: 'Programming',
         image: 'src/assets/certificates/Cert6.jpg',
         title: 'Introduction to Data Science and scikit-leran in Python',
@@ -102,7 +110,7 @@ const Certificates = ref([
         webURL: 'https://coursera.org/share/463a06c02b35026ac174a08635029e9d'
     },
     {
-        id: 7,
+        id: 8,
         certificate: 'Programming',
         image: 'src/assets/certificates/Cert7.jpg',
         title: 'JavaScript OOP: Mastering Modern Object-Oriented Programming',
@@ -110,7 +118,7 @@ const Certificates = ref([
         webURL: 'https://www.udemy.com/certificate/UC-0600101b-70d0-4084-85e3-f0918777d820/'
     },
     {
-        id: 8,
+        id: 9,
         certificate: 'Programming',
         image: 'src/assets/certificates/Cert8.jpg',
         title: 'The Complete Vue.JS Course for Beginners: Zero to Mastery',
@@ -118,7 +126,7 @@ const Certificates = ref([
         webURL: 'https://www.udemy.com/certificate/UC-88ddfd8d-87d1-4a28-a788-e2e4766b38f8/'
     },
     {
-        id: 9,
+        id: 10,
         certificate: 'Others',
         image: 'src/assets/certificates/Cert9.jpg',
         title: 'Cybersecurity Essentials Course',
@@ -126,7 +134,7 @@ const Certificates = ref([
         webURL: 'https://www.credly.com/badges/442390f9-bdc8-4f15-974e-24992cfb007a'
     },
     {
-        id: 10,
+        id: 11,
         certificate: 'Others',
         image: 'src/assets/certificates/Cert10.jpg',
         title: 'Getting started with Google Workspace',
@@ -134,7 +142,7 @@ const Certificates = ref([
         webURL: 'https://coursera.org/share/079df4e15396cc2dfe2b0a007cf72a5a'
     },
     {
-        id: 11,
+        id: 12,
         certificate: 'Others',
         image: 'src/assets/certificates/Cert11.jpg',
         title: 'Create your e-commerce story with Shopify',
@@ -142,7 +150,7 @@ const Certificates = ref([
         webURL: 'https://coursera.org/share/aab53abaeca7cb135eb463d4f9d36273'
     },
     {
-        id: 12,
+        id: 13,
         certificate: 'Others',
         image: 'src/assets/certificates/Cert12.jpg',
         title: 'Critical Thinking Skills for the Professional',

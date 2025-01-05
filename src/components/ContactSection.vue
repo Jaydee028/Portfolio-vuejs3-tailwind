@@ -28,7 +28,7 @@
                         </div>
                         <div class="ml-5 text-white">
                             <h4>Email</h4>
-                            <p>xxxxxxx@gmail.com</p>
+                            <p>jessedanbancale@gmail.com</p>
                         </div>
                     </div>
 
@@ -39,7 +39,7 @@
                         </div>
                         <div class="ml-5 text-white">
                             <h4>Phone</h4>
-                            <p>+xxxxxxxxxx</p>
+                            <p>+639169819865</p>
                         </div>
                     </div>
 
@@ -50,7 +50,8 @@
                         </div>
                         <div class="ml-5 text-white">
                             <h4>LinkedIn</h4>
-                            <p>wwww.LinkedIn.com</p>
+                            <p><a href="https://www.linkedin.com/in/jesse-dan-bancale-276971188/"
+                                    target="_blank">linkedin.com/in/jesse-dan-bancale-276971188/</a></p>
                         </div>
                     </div>
                 </div>
